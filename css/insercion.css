@@ -2,6 +2,7 @@
 /*                                   ESTILO DE INSERCION.HTML                               */
 body{
     background-image: url("../img/fondo.webp");
+    font-family: sans-serif;
 }
 input{
     background-color: transparent;
@@ -9,6 +10,7 @@ input{
     border: solid 1px rgb(155, 142, 106);
     border-radius: 10px;
     transition: 400ms;
+    margin-top: 0.5em;
 }
 input:hover{
     background-color: rgb(243, 180, 80);
@@ -17,12 +19,21 @@ input:hover{
 input::placeholder{
     color: black;
 }
+.genero{
+    display: flex;
+    gap: 4em;
+}
+#aceptaterminos{
+    display: flex;
+    gap: 1em;
+}
 #buttonEnviar{
     background-color: rgba(230, 230, 75, 0.598);
 }
-label{
-    display: block;
-}
+/* label{
+    display: flex;
+    margin-bottom: 0.5rem;
+} */
 label + input:required:after{
     content:"*";
 }

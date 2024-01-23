@@ -28,13 +28,15 @@
         <input type="email" id="email" name="email" placeholder="obligatorio" required><br>
 
         <!--radio button se utiliza para elegir una entre varias alternativas-->
-        <input type="radio" name="sexo" id="male" value="male">
-        <label for="male">Hombre</label><br>
+        <div class="genero">
+            <input type="radio" name="sexo" id="male" value="male">
+        <label for="male">Hombre</label>
         <input type="radio" name="sexo" id="female" value="female">
-        <label for="female">Mujer</label><br>
+        <label for="female">Mujer</label>
         <input type="radio" name="sexo" id="other" value="other">
-        <label for="other">Prefiero no decirlo</label><br>
-
+        <label for="other">Prefiero no decirlo</label>
+        </div>
+        
         <!-- select-->
         <label for="">Elige provincia: </label><br>
         <select name="provincia" id="provincia">
@@ -49,12 +51,13 @@
             <option value="23">Jaén</option>
         </select>
         <br>
-        <!--textarea-->
-        <label for="comentarios">Comentarios:</label><br>
-        <textarea name="coment" id="coment" cols="30" rows="10"></textarea><br>
 
         <!--Casilla de verificacion-->
-        <input type="checkbox" name="terminos" id="terminos" required><label for="">Acepto los <a href=""> terminos...</a></label><br>
+        <div id="aceptaterminos">
+            <input type="checkbox" name="terminos" id="terminos" required>
+        <label for="">Acepto los <a href=""> terminos...</a></label><br>
+        </div>
+        
 
         <!--boton enviar, obligatorio-->
         <input type="submit" value="Enviar" id="buttonEnviar">
